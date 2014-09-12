@@ -10,6 +10,7 @@ quizQuestions.directive('quizQuestions', function(){
     controller: function($scope, $http){
 
       $scope.limitToNum = 11;
+      $scope.showFromIndex = 0;
       $scope.formData = {};
       $scope.questions = {};
 

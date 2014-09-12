@@ -1,29 +1,13 @@
 {
-  "name": "mean",
-  "description": "MEAN.io: A fullstack JavaScript framework powered by MongoDB, ExpressJS, AngularJS, NodeJS.",
-  "version": "0.4.0",
+  "name": "quiz",
+  "description": "MEAN.io: A fullstack JavaScript framework powered by MongoDB, ExpressJS, AngularJS, NodeJS, an bootstrap",
+  "version": "0.0.1",
   "private": false,
-  "author": "Linnovate <mean@linnovate.net>",
-  "contributors": [{
-    "name": "Lior Kesos",
-    "mail": "lior@linnovate.net"
-  }, {
-    "name": "Yonatan Ellman",
-    "mail": "yonatan@linnovate.net"
-  }, {
-    "name": "Drew Fyock",
-    "mail": "drew@steelbisondev.com"
-  }, {
-    "name": "Ehud Shahak",
-    "mail": "ehud@linnovate.net"
-  }, {
-    "name": "Amos Haviv",
-    "mail": "mail@amoshaviv.com"
-  }],
+  "author": "",
   "mean": "0.4.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/linnovate/mean.git"
+    "url": "https://github.com/lukeft/mean.git"
   },
   "engines": {
     "node": "0.10.x",
@@ -67,6 +51,7 @@
     "mongoose": "^3.8.8",
     "morgan": "^1.0.0",
     "ms": "0.6.2",
+    "monospaced.mousewheel": "1.0.4",
     "nodemailer": "~0.7.0",
     "passport": "^0.2.0",
     "passport-facebook": "^1.0.3",

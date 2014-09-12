@@ -11,3 +11,7 @@ body 					{ padding-top:50px; }
 .red {
   color:#FF0000;
 }
+
+.pull-right {
+  float: right !important;
+}

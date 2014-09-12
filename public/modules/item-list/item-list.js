@@ -14,7 +14,7 @@ itemsList.directive('itemList', function(){
 
     controller:function($scope){
 
-      $scope.mouseOver = false;
+      $scope.adding = false;
 
       $scope.removeItem = function(value){
         var items = $scope.items;
@@ -28,8 +28,11 @@ itemsList.directive('itemList', function(){
       };
 
       $scope.onMouseLeave = function(){
-        $scope.mouseOver = false;
-        $scope.onSubmit('');
+        //$scope.onSubmit('');
+      };
+
+      $scope.addItem = function(){
+        $scope.adding = true;
       };
 
       $scope.onSubmit = function(value){
