@@ -3,7 +3,7 @@
 var paths = {
   js: ['*.js', 'test/**/*.js', '!test/coverage/**', '!bower_components/**', 'packages/**/*.js', '!packages/**/node_modules/**', '!packages/contrib/**/*.js', '!packages/contrib/**/node_modules/**'],
   html: ['packages/**/public/**/views/**', 'packages/**/server/views/**'],
-  css: ['!bower_components/**', 'packages/**/public/**/css/*.css', '!packages/contrib/**/public/**/css/*.css']
+  css: ['!bower_components/**', 'packages/**/public/**/css/*.css', '!packages/contrib/**/public/**/css/*.css', './src/css/styles.css']
 };
 
 module.exports = function(grunt) {
@@ -27,6 +27,7 @@ module.exports = function(grunt) {
       },
       html: {
         files: paths.html,
+
         options: {
           livereload: true,
           interval: 500
@@ -65,6 +66,11 @@ module.exports = function(grunt) {
     cssmin: {
       core: {
         files: '<%= assets.core.css %>'
+      },
+      user: {
+        files: {
+          './public/css/styles.css' : './src/css/styles.css'
+        }
       }
     },
     nodemon: {
@@ -73,7 +79,7 @@ module.exports = function(grunt) {
         options: {
           args: [],
           ignore: ['node_modules/**'],
-          ext: 'js,html',
+          ext: 'js,html,css',
           nodeArgs: ['--debug'],
           delayTime: 1,
           cwd: __dirname
@@ -117,7 +123,7 @@ module.exports = function(grunt) {
   if (process.env.NODE_ENV === 'production') {
     grunt.registerTask('default', ['clean', 'cssmin', 'uglify', 'concurrent']);
   } else {
-    grunt.registerTask('default', ['clean', 'jshint', 'csslint', 'concurrent']);
+    grunt.registerTask('default', ['clean', 'jshint', 'cssmin:user', 'csslint', 'concurrent']);
   }
 
   //Test task.

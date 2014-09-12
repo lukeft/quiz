@@ -1,0 +1,11 @@
+<form ng-submit="onSubmit()" ng-mouseleave="onMouseLeave()" >
+    <div>
+        <button ng-repeat="item in items" type="button" ng-click="removeItem(item)" class="btn btn-default btn-sm" ng-hide="mouseOver">{{item}}  <span style="color:red;">&minus;</span></button>
+        <button ng-mouseenter="mouseOver = true"
+                type="button" ng-click="addItem(item)"
+                class="btn btn-primary btn-sm" ng-hide="mouseOver">+</button>
+
+        <input type="text" class="text-center form-control input-sm pull-left" placeholder="add" ng-model="newItem" ng-show="mouseOver" ng-animate="show">
+    </div>
+
+</form>

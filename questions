@@ -1,0 +1,1654 @@
+var docs = [
+{
+"answer": "Elton John",
+"categories": [
+"Pop culture"
+],
+"question": "Who is Reginald Dwight better known as?"
+},
+{
+"answer": "Harold",
+"categories": [
+"History"
+],
+"question": "Name the king who failed to keep an eye on things at the battle of Hastings?"
+},
+{
+"answer": "Polo",
+"categories": [
+"Sport"
+],
+"question": "In which sport would you use a chucker?"
+},
+{
+"answer": "Science fiction",
+"categories": [
+"Literature"
+],
+"question": "What sort of books is Arthur C Clarke famous for writing?"
+},
+{
+"answer": "Charlton Heston",
+"categories": [
+"Film"
+],
+"question": "Name the actor who played Ben Hur?"
+},
+{
+"Answer": "Dogs",
+"categories": [
+"General knowledge"
+],
+"question": "Toy, gun, and working are all types of what?"
+},
+{
+"answer": "Port Stanley",
+"categories": [
+"Geography"
+],
+"question": "What is the capital of the Falkland Islands?"
+},
+{
+"answer": "Ian Macshane",
+"categories": [
+"Film"
+],
+"question": "Name the actor who played Lovejoy?"
+},
+{
+"answer": "Bats",
+"categories": [
+"Science"
+],
+"question": "Fruit, pipistrol, and horseshoe are all types of what?"
+},
+{
+"answer": "10 days",
+"categories": [
+"General knowledge"
+],
+"question": "If a snail climbed up a 12 ft wall at asteady rate of 3 feet a day, but slippeddown a 2ft every night, how many days would it take him to reach the top?"
+},
+{
+"answer": "Michael Kaine. ",
+"categories": [
+"Film"
+],
+"question": "Name the actor who became famous after his part as the lieutenant in Zulu?"
+},
+{
+"answer": "Jesse Owens",
+"categories": [
+"Sport"
+],
+"question": "Name the athlete who won 4 gold medals inthe 1936 Berlin Olympics?"
+},
+{
+"answer": "Cat`s eyes",
+"categories": [
+"General knowledge"
+],
+"question": "What was Percy Shaw`s contribution to road safety?"
+},
+{
+"answer": "81",
+"categories": [
+"Politics"
+],
+"question": "Of the 518 seats in the European parliament how many does the U.K. have, is it 21, 51, or 81?"
+},
+{
+"answer": "Michael Foot ",
+"categories": [
+"Who gives a fuck"
+],
+"question": "Which leading politician caused a stir when he attended the remembrance day service in a duffel coat?"
+},
+{
+"answer": "19",
+"categories": [
+"Maths"
+],
+"question": "What is the square root of 361?"
+},
+{
+"answer": "Nemo",
+"categories": [
+"Film",
+"Literature"
+],
+"question": "Name the captain of the Nautilus in Jules Vernes` 20,0000 leagues under the sea?"
+},
+{
+"answer": "Kensington",
+"categories": [
+"Geography"
+],
+"question": "In which London borough is the Royal Albert Hall?"
+},
+{
+"answer": "Absent without leave",
+"categories": [
+"General knowledge"
+],
+"question": "What are you if you are AWOL or A.W.O.L?"
+},
+{
+"answer": "let them eat cake",
+"categories": [
+"History"
+],
+"question": "When told that the people had no bread, what was Marie Antionette`s reply?"
+},
+{
+"answer": "knee",
+"categories": [
+"Science"
+],
+"question": "Specifically, on which part of your body would you find your patella?"
+},
+{
+"answer": "Abraham Lincoln",
+"categories": [
+"History"
+],
+"question": "In the United States which president abolished slavery?"
+},
+{
+"answer": "Dance",
+"categories": [
+"General knowledge"
+],
+"question": "What is a fandango?"
+},
+{
+"answer": "Walnut",
+"categories": [
+"General knowledge"
+],
+"question": "Traditionally, what type of wood do RollsRoyce put on the dashboards of their cars?"
+},
+{
+"answer": "5",
+"categories": [
+"Super easy",
+"General knowledge"
+],
+"question": "How many vowels are there in the word unprepossessing?"
+},
+{
+"answer": "Young Mens Christian Association",
+"categories": [
+"General Knowledge"
+],
+"question": "What do the letters Y.M.C.A. stand for?"
+},
+{
+"answer": "240",
+"categories": [
+"Maths"
+],
+"question": "A man spends one eighth of his money on food and four times as much on his mortgage, this leaves him with 90 pounds, how much did he have to start with?"
+},
+{
+"answer": "Mexico",
+"categories": [
+"Geography"
+],
+"question": "In which country is the state of Tobasco?"
+},
+{
+"answer": "Cut peat",
+"categories": [
+"General knowledge"
+],
+"question": "what would an Irishman do with his Shone?"
+},
+{
+"answer": "Jena Wade",
+"categories": [
+"Film"
+],
+"question": "What was the name of Pricilla Presley`s character in Dallas?"
+},
+{
+"answer": "20 yards",
+"categories": [
+"Sport",
+"General knowledge"
+],
+"question": "What is the diameter of the centre circle on a soccer pitch?"
+},
+{
+"answer": "Wind surfing",
+"categories": [
+"Sport"
+],
+"question": "What sport features sails, wishbone booms, and universal joints?"
+},
+{
+"answer": "American Express. ",
+"categories": [
+"General knowledge"
+],
+"question": "What world famous card features a centurion on its face?"
+},
+{
+"answer": "Mount Etna",
+"categories": [
+"Geography"
+],
+"question": "What is the highest active volcano in Europe?"
+},
+{
+"answer": "Nazi",
+"categories": [
+"History"
+],
+"question": "Name the political party which secured 99% of the vote in Germany in 1936?"
+},
+{
+"answer": "Aquarius",
+"categories": [
+"General knowledge"
+],
+"question": "What star sign is represented by the water carrier?"
+},
+{
+"answer": "Corsica",
+"categories": [
+"Geography"
+],
+"question": "Which Island is the furthest north - Sicily, Corsica or Sardinia?"
+},
+{
+"answer": "Dickens",
+"categories": [
+"Literature"
+],
+"question": "Who wrote A Tale Of Two Cities?"
+},
+{
+"answer": "Maple leaf",
+"categories": [
+"geography"
+],
+"question": "What is the national emblem of Canada?"
+},
+{
+"answer": "Dick Francis",
+"categories": [
+"Literature"
+],
+"question": "Name the former royal jockey who became a best selling author of thrillers about horse racing?"
+},
+{
+"answer": "Metronome",
+"categories": [
+"General knowledge"
+],
+"question": "Name the clockwork devices used by musicians to measure time?"
+},
+{
+"answer": "Peter Sellers",
+"categories": [
+"Film"
+],
+"question": "Who played inspector Cleuseau in the Pink Panther films?"
+},
+{
+"answer": "G.M.T. or Greenwich Mean Time",
+"categories": [
+"General knowledge"
+],
+"question": "What is universal time better known as?"
+},
+{
+"answer": "Herbivors",
+"categories": [
+"Science"
+],
+"question": "Are Gorillas carnivores, omnivores,or herbivors?"
+},
+{
+"answer": "Australia",
+"categories": [
+"Geography"
+],
+"question": "The cassowary and Emu are both flightless birds of which country?"
+},
+{
+"answer": "Greece",
+"categories": [
+"General knowledge",
+"language"
+],
+"question": "What does Hellas mean to a Greek person?"
+},
+{
+"answer": "200",
+"categories": [
+"Maths"
+],
+"question": "If there are 35 gallons of oil in a barrel how many barrels would you need to fill a tank which holds 7000 gallons?"
+},
+{
+"answer": "Excalibur",
+"categories": [
+"History",
+"General knowledge"
+],
+"question": "According to Arthurian legend what did the ady of the lake give to Arthur?"
+},
+{
+"answer": "A whale",
+"categories": [
+"Film"
+],
+"question": "Free Willey was a film about what?"
+},
+{
+"answer": "Icarus",
+"categories": [
+"General knowledge"
+],
+"question": "According to legend who flew too close to the sun, melting the wax on his wings?"
+},
+{
+"answer": "National society for the prevention of cruelty tochildren",
+"categories": [
+"General knowledge"
+],
+"question": "What does N.S.P.C.C. stand for?"
+},
+{
+"answer": "yes",
+"categories": [
+"General knowledge"
+],
+"question": "Can pigs swim?"
+},
+{
+"answer": "Mayflower",
+"categories": [
+"History"
+],
+"question": "Name the ship which began its epic voyageon 6th September 1620?"
+},
+{
+"answer": "Nero",
+"categories": [
+"History"
+],
+"question": "By what name was Emperor Claudius Caesar Drusus Germanicus better known?"
+},
+{
+"answer": "Evacuation of Dunkirk",
+"categories": [
+"History"
+],
+"question": "What World War II operation was code named `Dynamo`?"
+},
+{
+"answer": "Iron cloth",
+"categories": [
+"General knowledge"
+],
+"question": "What would a tailor do with his hot plonker?"
+},
+{
+"answer": "Back gammon",
+"categories": [
+"General knowledge"
+],
+"question": "What classic board game involves points, blots, tables and bearing off?"
+},
+{
+"answer": "Georgia",
+"categories": [
+"General knowledge"
+],
+"question": "What `G` is in the United States, inthe Soviet Union and 'onmymind'?"
+},
+{
+"answer": "Four",
+"categories": [
+"General knowledge",
+"history"
+],
+"question": "How many old pennies were there in a Groat?"
+},
+{
+"answer": "40",
+"categories": [
+"General knowledge",
+"Maths"
+],
+"question": "In total, how many gold rings are mentionedin the song, The 12 days of Christmas?"
+},
+{
+"answer": "Lancelot",
+"categories": [
+"General knowledge"
+],
+"question": "According to the legend, which night became lady Guinavere`s lover?"
+},
+{
+"answer": "Profumo affair",
+"categories": [
+"History",
+"General knowledge"
+],
+"question": "What name was given to the political scandal of 1963 which eventually resulted in the fall of the government? "
+},
+{
+"answer": "Platinum",
+"categories": [
+"General knowledge"
+],
+"question": "What name is given to a 70th wedding anniversary?"
+},
+{
+"answer": "Feed it to his animals. ",
+"categories": [
+"General knowledge"
+],
+"question": "What would a farmer do with his mangelwurzel?"
+},
+{
+"answer": "A knock-on",
+"categories": [
+"Sport"
+],
+"question": "What is the rugby term for a ball that is dropped forward?"
+},
+{
+"answer": "Duck",
+"categories": [
+"General knowledge"
+],
+"question": "Pintail, Pochard and Shoveler are all varieties of what?"
+},
+{
+"answer": "Constrictor",
+"categories": [
+"General knowledge"
+],
+"question": "What name is given to snakes such as pythons because of their method of killingtheir prey by suffocation?"
+},
+{
+"answer": "Plankton",
+"categories": [
+"Science",
+"General knowledge"
+],
+"question": "What word is used to describe the tiny animals and plants that live in the surface water of seas and lakes?"
+},
+{
+"answer": "National Association of Local Government Officers",
+"categories": [
+"General knowledge",
+"who gives a fuck"
+],
+"question": "What does N.A.L.G.O. stand for?"
+},
+{
+"answer": "Chitty Chitty Bang Bang",
+"categories": [
+"Film"
+],
+"question": "In which children's film did Benny Hill star as the toy maker?."
+},
+{
+"answer": "500",
+"categories": [
+"Maths"
+],
+"question": "What is the square route of 250,000?"
+},
+{
+"answer": "James Dean",
+"categories": [
+"Film"
+],
+"question": "Which American actor died in a car crash while travelling west on California highway 466?"
+},
+{
+"answer": "Four",
+"categories": [
+"Sport"
+],
+"question": "How many miles do the teams race inthe Oxford and Cambridge boat race?"
+},
+{
+"answer": "Bruce Willis",
+"categories": [
+"Film"
+],
+"question": "Name the actor who starred in the Die Hard series of films?"
+},
+{
+"answer": "Attach",
+"categories": [
+"General knowledge"
+],
+"question": "What word beginning with `A` can mean join, fasten or connect?"
+},
+{
+"answer": "Guitar",
+"categories": [
+"General knowledge"
+],
+"question": "Ovation, Fender, & Gibson are famous makes of what?"
+},
+{
+"answer": "Three",
+"categories": [
+"General knowledge"
+],
+"question": "How many legs does a triffid have? ( They are real )"
+},
+{
+"answer": "Adriatic",
+"categories": [
+"Geography"
+],
+"question": "The city of Venice is situated in the north west corner of which sea?"
+},
+{
+"answer": "Laying",
+"categories": [
+"General knowledge"
+],
+"question": "In the song `The 12 days of Christmas`, what are the 6 geese a-doing?"
+},
+{
+"answer": "Lee Armstrong Custer",
+"categories": [
+"History"
+],
+"question": "Whose army was massacred at the battle of the battle `little big horn` in 1839?"
+},
+{
+"answer": "Scotland Yard",
+"categories": [
+"General knowledge"
+],
+"question": "What are the headquarters of the of the Metropolitan police?"
+},
+{
+"answer": "Status Quo",
+"categories": [
+"Who gives a fuck"
+],
+"question": "Which pop Group opened the live aidconcert at Wembley?"
+},
+{
+"answer": "Havoc",
+"categories": [
+"General knowledge"
+],
+"question": "What `H` means disorder and confusion?"
+},
+{
+"answer": "Ebony",
+"categories": [
+"General knowledge"
+],
+"question": "What sort of wood is used to make the black keys on a piano keyboard?"
+},
+{
+"answer": "Baseball",
+"categories": [
+"Sport"
+],
+"question": "Which popular American sport is played on a diamond?"
+},
+{
+"answer": "Nigeria",
+"categories": [
+"Geography"
+],
+"question": "Lagos is the capitol of which African country?"
+},
+{
+"answer": "Between the wickets. ( A unit of measurement )",
+"categories": [
+"Sport"
+],
+"question": "In cricket, where would you find the chain?"
+},
+{
+"answer": "Thirteen",
+"categories": [
+"General knowledge"
+],
+"question": "How many cards are dealt to each player in contract bridge?"
+},
+{
+"answer": "Bagpuss",
+"categories": [
+"Film"
+],
+"question": "Which children's T.V. program featured professor Yaffety?"
+},
+{
+"answer": "400",
+"categories": [
+"Maths"
+],
+"question": "If a customer orders 100 dozen widgets and wants them delivered in three equal quantities on consecutive days, how many widgets will there be in each delivery?"
+},
+{
+"answer": "Tony Curtis",
+"categories": [
+"Film"
+],
+"question": "Who starred alongside Roger Moore in The Persuaders?"
+},
+{
+"answer": "Radio 2",
+"categories": [
+"General knowledge"
+],
+"question": "Which of the B.B.C.`s radio stations is broadcast on 88 to 91 F.M."
+},
+{
+"answer": "Pink Floyd",
+"categories": [
+"Music"
+],
+"question": "Which Band have released albums called `The dark side of the moon`, and `Wishyou were here`?"
+},
+{
+"answer": "Harold Wilson Edward Heath",
+"categories": [
+"History",
+"Politics"
+],
+"question": "Name both British prime ministers of 1970?"
+},
+{
+"answer": "Fencing",
+"categories": [
+"Sport"
+],
+"question": "Epee, sabre and foil are all used in which sport?"
+},
+{
+"answer": "Hippocratic",
+"categories": [
+"General knowledge"
+],
+"question": "Name the oath sworn by medical graduates which regulates their future professional conduct?"
+},
+{
+"answer": "Life",
+"categories": [
+"General knowledge"
+],
+"question": "According to Dr Johnson once you are tired of London what else are you also tired of?"
+},
+{
+"answer": "Aries",
+"categories": [
+"General knowledge"
+],
+"question": "Which sign of the Zodiac is depicted by a ram?"
+},
+{
+"answer": "Tee peg",
+"categories": [
+"General knowledge"
+],
+"question": "Name the golfing accessory which was patented by George Grant on Dec 12th 1899?"
+},
+{
+"answer": "Nottingham-shire",
+"categories": [
+"Sport"
+],
+"question": "In which county would you find Trent Bridge cricket ground?"
+},
+{
+"answer": "Six",
+"categories": [
+"Maths",
+"General knowledge"
+],
+"question": "How many times in a year is a bi-mionthly periodical published?"
+},
+{
+"answer": "Fungus",
+"categories": [
+"General knowledge"
+],
+"question": "What sort of plant is a truffle?"
+},
+{
+"answer": "Omah Sherrif",
+"categories": [
+"Film",
+"Sport"
+],
+"question": "Name the actor who is also one of the world`s top professional bridge players?"
+},
+{
+"answer": "Croquet",
+"categories": [
+"Sport"
+],
+"question": "Name the sport which always starts a game in front of the south stake?"
+},
+{
+"answer": "Budda",
+"categories": [
+"General knowledge"
+],
+"question": "Name the man who has the most monuments erected in his honour?"
+},
+{
+"answer": "Purdy",
+"categories": [
+"Film"
+],
+"question": "Name the character played by Joanna Lumbleyin the New Avengers?"
+},
+{
+"answer": "Sixteen",
+"categories": [
+"Maths"
+],
+"question": "On his egg deliveries, farmer Fred sets off with 400 eggs. At the first delivery he dropsoff 5 doz` at the second, 12 doz` and at the last one he delivers 15 doz`. How many eggs does he take home to his brooding wife?"
+},
+{
+"answer": "Tom, Dick, Harry",
+"categories": [
+"Film"
+],
+"question": "Give the names of the 3 tunnels dug by the prisoners in the film `The Great escape`?"
+},
+{
+"answer": "English Afrikaans. ",
+"categories": [
+"General knowledge",
+"Geography"
+],
+"question": "Name both official languages of south Africa?"
+},
+{
+"answer": "Track 29",
+"categories": [
+"Music"
+],
+"question": "According to the song, from which track does the Chattanooga choo choo leave Pennsylvania station?"
+},
+{
+"answer": "Leonardo da Vinci",
+"categories": [
+"History",
+"Art"
+],
+"question": "Who painted the Mona Lisa?"
+},
+{
+"answer": "Delihla",
+"categories": [
+"Mythology",
+"General knowledge"
+],
+"question": "In ancient history who betrayed Samson to the philistines?"
+},
+{
+"answer": "Grapefruit",
+"categories": [
+"General knowledge"
+],
+"question": "Name the fruit which earned its name from the way it hung in bunches like grapes?"
+},
+{
+"answer": "I.R.A",
+"categories": [
+"History"
+],
+"question": "Name the army formed by Michael Collinsin 1919 to fight against Britain?"
+},
+{
+"answer": "The Doomsday book",
+"categories": [
+"History",
+"General knowledge"
+],
+"question": "Name the very famous book which was completed in 1086? ."
+},
+{
+"answer": "Wales",
+"categories": [
+"Geography"
+],
+"question": "In which country would you find the Cambrian mountains?"
+},
+{
+"answer": "Atlantic, Indian",
+"categories": [
+"Geography"
+],
+"question": "Name the two oceans which meet at the Cape of Good Hope?"
+},
+{
+"answer": "Curling",
+"categories": [
+"Sport"
+],
+"question": "Which sport requires the competitors to throw stones at houses?"
+},
+{
+"answer": "Little boy blue ",
+"categories": [
+"General knowledge"
+],
+"question": "Which nursery rhyme character was warned that the cow was in the corn?"
+},
+{
+"answer": "Yak",
+"categories": [
+"General knowledge"
+],
+"question": "Name the Tibetan mammal which lives at the highest altitude of all mammals?"
+},
+{
+"answer": "The Red Baron",
+"categories": [
+"History",
+"General knowledge"
+],
+"question": "In the first world war who was Baron von Riched Hoffen better known as?"
+},
+{
+"answer": "Red sea",
+"categories": [
+"Geography",
+"General knowledge"
+],
+"question": "Name the world`s warmest sea?"
+},
+{
+"answer": "Eric Sykes",
+"categories": [
+"Film"
+],
+"question": "Who scripted, directed , and starred in the silent film, `The Plank`?"
+},
+{
+"answer": "Q",
+"categories": [
+"General knowledge"
+],
+"question": "What letter is in the top left on a standard typewriter keyboard?"
+},
+{
+"answer": "Billiards",
+"categories": [
+"Sport"
+],
+"question": "What game would you be playing if your cue ball had a black spot on it?"
+},
+{
+"answer": "Eyrie",
+"categories": [
+"General knowledge"
+],
+"question": "What name is given to an eagles nest?"
+},
+{
+"answer": "Idi Armeen",
+"categories": [
+"History"
+],
+"question": "Who seized power from Milton Obote 1971?"
+},
+{
+"answer": "Darth Vader",
+"categories": [
+"Film"
+],
+"question": "In the Star Wars trilogy who turns out to be Luke`s feather?"
+},
+{
+"answer": "Brazil Columbia Equador",
+"categories": [
+"Geography"
+],
+"question": "As the equator crosses South America, through which three countries does it pass? "
+},
+{
+"answer": "James Bond",
+"categories": [
+"Film"
+],
+"question": "Which character has been played by Roger Moore, George Lazenby, and David Niven?"
+},
+{
+"answer": "Mickey mouse",
+"categories": [
+"Film"
+],
+"question": "Name the first non-human to win an Oscar?"
+},
+{
+"answer": "Isle of man",
+"categories": [
+"Geography"
+],
+"question": "If you were standing outside the House of Keys, on which British island would you be?"
+},
+{
+"answer": "Gestapo",
+"categories": [
+"General"
+],
+"question": "By what name was the German secret police known?"
+},
+{
+"answer": "Ironside",
+"categories": [
+"Film"
+],
+"question": "Name the disabled detective played by Raymond Burr?"
+},
+{
+"answer": "Micheal Heseltine",
+"categories": [
+"Politics"
+],
+"question": "Name the defence secretary resigned over the Westland affair in 1886?"
+},
+{
+"answer": "A Minim",
+"categories": [
+"Music",
+"General knowledge"
+],
+"question": "In music a whole note is called a semibreve, what is a half note called?"
+},
+{
+"answer": "Loch Lommand",
+"categories": [
+"Geography"
+],
+"question": "Which is the largest of the Scottish lochs?"
+},
+{
+"answer": "Poseidon",
+"categories": [
+"Mythology"
+],
+"question": "Neptune and Poseidon were both Gods of the sea but Which one was Greek?"
+},
+{
+"answer": "Forearm",
+"categories": [
+"General knowledge"
+],
+"question": "In which part of your body would you find your radius and ulna?"
+},
+{
+"answer": "A spy",
+"categories": [
+"General knowledge"
+],
+"question": "What is a fifth columnist?"
+},
+{
+"answer": "George Orwell",
+"categories": [
+"Literature"
+],
+"question": "Who wrote the novel `1984`?"
+},
+{
+"answer": "National Farmers Union",
+"categories": [
+"General knowledge"
+],
+"question": "What does N.F.U. stand for?"
+},
+{
+"answer": "Burt Lancaster",
+"categories": [
+"Film"
+],
+"question": "Who was the star in the 1954 film `Apache`?"
+},
+{
+"answer": "Pygmalion",
+"categories": [
+"Film"
+],
+"question": "The film `My fair lady` was inspired by which Bernard Shaw play?"
+},
+{
+"answer": "Yare",
+"categories": [
+"Geography"
+],
+"question": "Name the river which runs through the city of Norwich?"
+},
+{
+"answer": "Cheeses",
+"categories": [
+"General knowledge"
+],
+"question": "What comes in Blue Shropshire, Swaledale and Red Cheshire varieties?"
+},
+{
+"answer": "Jordan",
+"categories": [
+"Geography"
+],
+"question": "In which country would you find the plainsof Jericho?"
+},
+{
+"answer": "Protractor",
+"categories": [
+"Maths",
+"General knowledge"
+],
+"question": "Name the instrument used by people to measure angles in geometry?"
+},
+{
+"answer": "Deputy Dog",
+"categories": [
+"Film"
+],
+"question": "Who do Vince and Musky accompany in their cartoon capers?"
+},
+{
+"answer": "Silverstone",
+"categories": [
+"Sport"
+],
+"question": "What race circuit would take you through Stowe, Copse, and club corners?"
+},
+{
+"answer": "Jenny",
+"categories": [
+"General knowledge"
+],
+"question": "What girls name is also the term used to describe a female donkey?"
+},
+{
+"answer": "Homogenised",
+"categories": [
+"General knowledge"
+],
+"question": "What word describes milk which contains the same amount of cream as pasteurised milk but has been processed in a way that stops the cream floating to the surface?"
+},
+{
+"answer": "Oxford",
+"categories": [
+"Film"
+],
+"question": "Where was the t.v. series Inspector Morse set?"
+},
+{
+"answer": "Michael Jackson",
+"categories": [
+"Music"
+],
+"question": "Name the singer who had a hit with a songabout a rat called Ben?"
+},
+{
+"answer": "Open spaces",
+"categories": [
+"General knowledge"
+],
+"question": "What is agoraphobia an irrational fear of?"
+},
+{
+"answer": "Nile",
+"categories": [
+"Geography"
+],
+"question": "The Aswan damn is to be found on which river?"
+},
+{
+"answer": "Absolute zero",
+"categories": [
+"Science",
+"General knowledge"
+],
+"question": "What is the name or term used to describe-273 deg centigrade?"
+},
+{
+"answer": "London Bridge",
+"categories": [
+"General knowledge"
+],
+"question": "Name the first bridge built across the Thames at London"
+},
+{
+"answer": "John Wayne",
+"categories": [
+"Film"
+],
+"question": "Name the star of the western True Grit for which this actor received his only Oscar?"
+},
+{
+"answer": "Rimsky Korsacov",
+"categories": [
+"Music"
+],
+"question": "Who composed `The flight of the bumble bee`?"
+},
+{
+"answer": "Mary Rose",
+"categories": [
+"History"
+],
+"question": "Which ship sank in the Solent in 1545 and was re-floated in the 1980s?"
+},
+{
+"answer": "Eight",
+"categories": [
+"Sport"
+],
+"question": "What is the maximum number of pullers allowed in a tug-o-war team?"
+},
+{
+"answer": "Elmar Fudd",
+"categories": [
+"Film"
+],
+"question": "What is the name of the dim witted hunter who never catches the rabbit in Bugs Bunny cartoons?"
+},
+{
+"answer": "Royal Flying Corps",
+"categories": [
+"History"
+],
+"question": "What was the predecessor of the R.A.F. called?"
+},
+{
+"answer": "Cooper",
+"categories": [
+"General knowledge"
+],
+"question": "What name is given to someone who makes barrels and casks?"
+},
+{
+"answer": "All Prime numbers",
+"categories": [
+"General knowledge",
+"super easy, Maths"
+],
+"question": "What do the numbers 2,3,5,7,11, and 13 all have in common?"
+},
+{
+"answer": "Rocky Marciano",
+"categories": [
+"Sport"
+],
+"question": "Name the heavyweight boxer who retired in 1956 as the undefeated heavyweight championof the world?"
+},
+{
+"answer": "Two",
+"categories": [
+"History",
+"General knowledge"
+],
+"question": "How many quarts are there in 2.72 litres?"
+},
+{
+"answer": "Shoes",
+"categories": [
+"General knowledge"
+],
+"question": "What does a Cordwainer make?"
+},
+{
+"answer": "T.N.T",
+"categories": [
+"General knowledge"
+],
+"question": "How is Trinitrotoluene usually abbreviated?"
+},
+{
+"answer": "The Devil",
+"categories": [
+"Mythology",
+"General knowledge"
+],
+"question": "In a witches' coven there are 13 places, but only 12 witches. Who takes the 13th place?"
+},
+{
+"answer": "Handwriting",
+"categories": [
+"General knowledge"
+],
+"question": "What is graphology the study of?"
+},
+{
+"answer": "Indian",
+"categories": [
+"General knowledge"
+],
+"question": "What sort of cooking does Madhur Jaffrey right about?"
+},
+{
+"answer": "Isobars",
+"categories": [
+"Science",
+"General knowledge"
+],
+"question": "On a weather chart what name is given to the lines which connect areas of the same atmos- pheric pressure?"
+},
+{
+"answer": "Handsworth",
+"categories": [
+"General knowledge"
+],
+"question": "What district of Birmingham suffered riots in 1985?"
+},
+{
+"answer": "Behind them",
+"categories": [
+"Science",
+"General knowledge"
+],
+"question": "Where is the sun in relation to some-one who is looking at a rainbow?"
+},
+{
+"answer": "Oliver`s",
+"categories": [
+"Music"
+],
+"question": "Whose army went to No 2 with Elvis Costello 1979?"
+},
+{
+"answer": "2.5 months",
+"categories": [
+"Maths"
+],
+"question": "If a ship has enough food to last the crew of 250 men for 6 months how long would it last a crew of 600 men?"
+},
+{
+"answer": "Vole",
+"categories": [
+"General knowledge"
+],
+"question": "What common water loving rodent is often mistakenly referred to as a water rat?"
+},
+{
+"answer": "Frank Spencer",
+"categories": [
+"Film"
+],
+"question": "Name the character played by Michael Crawford in `Some mothers do `ave `em`?"
+},
+{
+"answer": "Dallas",
+"categories": [
+"Film"
+],
+"question": "In which Tv series was there a company called Barnes Wentworth?"
+},
+{
+"answer": "Artful Dodger",
+"categories": [
+"Film",
+"Literature"
+],
+"question": "By what nickname is Jack Dawkins known in Oliver Twist?"
+},
+{
+"answer": "Skippy",
+"categories": [
+"Film"
+],
+"question": "Who was `The Bush Kangaroo`?"
+},
+{
+"answer": "Olivier-Newton John & John Travolta.. ",
+"categories": [
+"Film"
+],
+"question": "Name the two Johns who played the title roles in the musical `Grease`?"
+},
+{
+"answer": "Elsie Tanner. ",
+"categories": [
+"Film"
+],
+"question": "Name the Character played by Pat Phoenixin Coronation Street?"
+},
+{
+"answer": "Teeth",
+"categories": [
+"General knowledge"
+],
+"question": "What do frogs have in their mouths that toads don`t?"
+},
+{
+"answer": "Detroit",
+"categories": [
+"Geography"
+],
+"question": "Which American city is known to the Americans as Motor City?"
+},
+{
+"answer": "Steam locomotive",
+"categories": [
+"History",
+"General knowledge"
+],
+"question": "What sort of engine set the speed record of 126.4 mph which will probably never be broken?"
+},
+{
+"answer": "13",
+"categories": [
+"General knowledge",
+"Science"
+],
+"question": "How many orbits of the earth does the moon make in a year? "
+},
+{
+"answer": "Salmon",
+"categories": [
+"General knowledge"
+],
+"question": "What goes through its life as an elvin, parr, smolt, grilse, and kelt?"
+},
+{
+"answer": "The meat",
+"categories": [
+"General knowledge",
+"language"
+],
+"question": "In a chilli con carne, the chilli is the spice but what is the carne?"
+},
+{
+"answer": "Inverness",
+"categories": [
+"Geography"
+],
+"question": "Which is the furthest west: Inverness, Chester, or Bristol?"
+},
+{
+"answer": "China",
+"categories": [
+"Geography",
+"General knowledge"
+],
+"question": "From which country does the Triad secret society hail. Hong Kong, China or Japan?"
+},
+{
+"answer": "James Dean",
+"categories": [
+"Film"
+],
+"question": "Who was the star of the cult movie `Rebel without a cause`?"
+},
+{
+"answer": "England",
+"categories": [
+"Film"
+],
+"question": "In which country was Charlie Chaplin born?"
+},
+{
+"answer": "Thursday",
+"categories": [
+"General knowledge"
+],
+"question": "On which day of the week do Americans celebrate thanksgiving?"
+},
+{
+"answer": "345",
+"categories": [
+"Maths"
+],
+"question": "Which of the following is not wholly divisible by 9. 243, 345, or 459?"
+},
+{
+"answer": "Ten",
+"categories": [
+"General knowledge"
+],
+"question": "How many years would you have been married if it was your tin wedding anniversary?"
+},
+{
+"answer": "Eldorado",
+"categories": [
+"Film"
+],
+"question": "What was the name of the disastrous, sun drenched soap launched by the B.B.C. in 1992?"
+},
+{
+"answer": "Paddock",
+"categories": [
+"General knowledge"
+],
+"question": "What is the name given to the area where horses are paraded in front of the public before a race?"
+},
+{
+"answer": "Beatles",
+"categories": [
+"Music"
+],
+"question": "Which of the following was originally called Johnny and the moon dogs.The Beatles, The Sex Pistols, or The who?"
+},
+{
+"answer": "Tungsten",
+"categories": [
+"Sport"
+],
+"question": "What is the metal most commonly used tomake a set of darts?"
+},
+{
+"answer": "Black",
+"categories": [
+"General knowledge"
+],
+"question": "On what colour square does a white king begin a game of chess?"
+},
+{
+"answer": "Tourism",
+"categories": [
+"General knowledge"
+],
+"question": "What industry provides Spain with its largest source of income?"
+},
+{
+"answer": "Knight",
+"categories": [
+"General knowledge"
+],
+"question": "What chess-piece must move in an L shape?"
+},
+{
+"answer": "He ran backwards",
+"categories": [
+"Sport",
+"General knowledge"
+],
+"question": "In Sept. 1979 Paul Wilson ran 100 yards in 13.1 seconds, but what was so unusual about his achievement that it earned him a placein the Guinness book of records?"
+},
+{
+"answer": "Gotham City",
+"categories": [
+"Film",
+"Comic"
+],
+"question": "Where do Batman and Robin do their crime fighting?"
+},
+{
+"answer": "Northern",
+"categories": [
+"London",
+"who gives a fuck"
+],
+"question": "Which London underground line has stations at London Bridge, Leicester square and Waterloo?"
+},
+{
+"answer": "Baldrick",
+"categories": [
+"Film"
+],
+"question": "Who was Lord Black adder`s Man servant in Black Adder II?"
+},
+{
+"answer": "Dolphin",
+"categories": [
+"General knowledge"
+],
+"question": "Which mamal is generally accepted as being the most intelligent creature on earth after humans?"
+},
+{
+"answer": "Today",
+"categories": [
+"General knowledge"
+],
+"question": "According to the nursery rhyme when is the teddy bears picnic?"
+},
+{
+"answer": "Humpbacks",
+"categories": [
+"General know"
+],
+"question": "What type of whales are renowned for their singing?"
+},
+{
+"answer": "Mel Gibson",
+"categories": [
+"Film"
+],
+"question": "Which actor portrayed the Scottish republican William Wallace in the film `Braveheart`?"
+},
+{
+"answer": "Killer",
+"categories": [
+"language",
+"General knowledge"
+],
+"question": "What does the word Matador mean?"
+},
+{
+"answer": "Rolf Harris",
+"categories": [
+"Music"
+],
+"question": "Who had hits with `Two Little Boys` and `Stairway to Heaven`"
+},
+{
+"answer": "Xerox",
+"categories": [
+"language"
+],
+"question": "Which photocopier company took its name from a Greek word which means dry?"
+},
+{
+"answer": "Acid",
+"categories": [
+"Science",
+"General knowledge"
+],
+"question": "What turns litmus paper red?"
+},
+{
+"answer": "Portuguese",
+"categories": [
+"Language",
+"geography, General knowledge"
+],
+"question": "Name the official language of Brazil?"
+},
+{
+"answer": "Chimpanzee",
+"categories": [
+"General knowledge"
+],
+"question": "Which species of ape is our closest relative?"
+},
+{
+"answer": "Yeast",
+"categories": [
+"General knowledge"
+],
+"question": "Name the fungus used in the bread makingprocess?"
+},
+{
+"answer": "Czech",
+"categories": [
+"General knowledge"
+],
+"question": "From which country did the Skoda car originate?"
+},
+{
+"answer": "Optic nerve",
+"categories": [
+"Biology",
+"General knowledge"
+],
+"question": "What name is given to the nerve which carries signals from the retina to the brain?"
+},
+{
+"answer": "Beat their Chests",
+"categories": [
+"Zoology",
+"General knowledge"
+],
+"question": "What do Gorillas do when they get nervous?"
+},
+{
+"answer": "plucking",
+"categories": [
+"Music",
+"general knowledge"
+],
+"question": "If you were playing your violin `pizzicato` how would you be playing it?"
+},
+{
+"answer": "Bluto, Brutus",
+"categories": [
+"Film",
+"Cartoon"
+],
+"question": "Who was Popeye`s arch rival?"
+},
+{
+"answer": "Jason",
+"categories": [
+"Mythology"
+],
+"question": "Which legendary hero sailed aboard the Argo?"
+},
+{
+"answer": "Orange",
+"categories": [
+"General knowledge"
+],
+"question": "What colour is an aircraft`s 'blackbox' flight recorder?"
+},
+{
+"answer": "Sapphire",
+"categories": [
+"General knowledge"
+],
+"question": "What sort of precious stone is the star of India?"
+},
+{
+"answer": "The Police",
+"categories": [
+"General knowledge"
+],
+"question": "What organisation used to be knows as 'Peelers'?"
+},
+{
+"answer": "Apache",
+"categories": [
+"History"
+],
+"question": "Of which American tribe was Geronimo a chief?"
+}
+];

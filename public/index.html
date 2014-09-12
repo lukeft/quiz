@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="Quiz">
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+    <title>MEAN Quiz</title>
+
+    <!-- SCROLLS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!-- SPELLS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="modules/item-list/item-list.js"></script>
+    <script type="text/javascript" src="modules/item-input/item-input.js"></script>
+    <script type="text/javascript" src="modules/quiz-filters/quiz-filters.js"></script>
+    <script type="text/javascript" src="modules/quiz-questions/quiz-questions.js"></script>
+
+</head>
+
+<body ng-controller="mainController">
+<div class="container">
+
+    <!--  Question count and title -->
+    <div class="text-center">
+        <img src="./images/s01.gif" alt="Quiz logo" class="img-circle">
+        <h2>Questions&NonBreakingSpace;<span class="label label-info">{{ questions.length }}</span></h2>
+    </div>
+
+    <!-- Column headers -->
+    <hr/>
+    <div class="row">
+        <div class="col-md-3"><h4 class="text-center">Questions</h4></div>
+        <div class="col-md-4"><h4 class="text-center">Answers</h4></div>
+        <div class="col-md-4"><h4 class="text-center">Categories</h4></div>
+        <div class="col-md-1"></div>
+    </div>
+    <hr/>
+
+    <!-- Rows containing question data -->
+    <quiz-questions></quiz-questions>
+
+    <hr/>
+
+</div>
+
+</body>
+</html>
