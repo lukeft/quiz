@@ -14,6 +14,10 @@ itemInput.directive('itemInput', function(){
 
     controller:function($scope){
 
+      $scope.saveChanges = function($event){
+        $scope.onUpdate();
+      };
+
     }
   }
 });

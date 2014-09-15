@@ -5,6 +5,6 @@
                 type="button" ng-click="addItem(item)"
                 class="btn btn-primary btn-sm pull-right" ng-hide="adding">+</button>
 
-        <input type="text" class="text-center form-control input-sm pull-left" placeholder="add" ng-model="newItem" ng-show="adding" ng-animate="show">
+        <input autofocus="adding" type="text" class="text-center form-control input-sm pull-left" placeholder="add" ng-model="newItem" ng-show="adding" ng-animate="show">
     </div>
 </form>
