@@ -34,7 +34,7 @@
     <!--  Question count and title -->
     <div class="text-center">
         <img src="./images/s01.gif" alt="Quiz logo" class="img-circle">
-        <h2>Questions&NonBreakingSpace;<span class="label label-info">{{ questions.length }}</span></h2>
+        <h2>Questions&NonBreakingSpace;<span class="label label-info">{{ numQuestions }}</span></h2>
     </div>
 
     <!-- Column headers -->
@@ -48,7 +48,7 @@
     <hr/>
 
     <!-- Rows containing question data -->
-    <quiz-questions></quiz-questions>
+    <quiz-questions num-questions="numQuestions"></quiz-questions>
 
     <hr/>
 

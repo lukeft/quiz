@@ -37,7 +37,7 @@ module.exports = function(grunt) {
         files: paths.css,
         tasks: ['csslint'],
         options: {
-          livereload: true
+          livereload: false
         }
       }
     },

@@ -1,10 +1,24 @@
-<form ng-submit="onSubmit()" ng-mouseleave="onMouseLeave()" >
+<form ng-submit="onSubmit()" ng-mouseleave="onMouseLeave()">
     <div>
-        <button ng-repeat="item in items" type="button" ng-click="removeItem(item)" class="btn btn-default btn-sm" ng-hide="adding">{{item}}  <span style="color:red;">&minus;</span></button>
+
+        <!-- Click to remove a current item -->
+        <button ng-repeat="item in items" type="button" ng-click="removeItem(item)" class="btn btn-default btn-sm"
+                ng-hide="adding">{{item}}
+            <span style="color:red;">&minus;</span>
+        </button>
+
+        <!-- Click to add a new item -->
         <button
                 type="button" ng-click="addItem(item)"
-                class="btn btn-primary btn-sm pull-right" ng-hide="adding">+</button>
+                class="btn btn-primary btn-sm pull-right" ng-hide="adding">&plus;</button>
 
-        <input autofocus="adding" type="text" class="text-center form-control input-sm pull-left" placeholder="add" ng-model="newItem" ng-show="adding" ng-animate="show">
+        <!-- Enter new item value (shown after clicking the button above)-->
+        <input type="text" class="text-center input-sm pull-left" placeholder="add" ng-model="newItem" ng-show="adding"
+               auto-focus="{{adding}}" ng-animate="show" ui-event="{ blur : 'onSubmit($event)' }">
+
+        <!-- Click to cancel adding new item -->
+        <button
+                type="button" ng-click="adding = false"
+                class="btn btn-warning btn-sm pull-right" ng-show="adding">&minus;</button>
     </div>
 </form>

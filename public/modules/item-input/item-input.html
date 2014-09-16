@@ -1,1 +1,3 @@
-<input type="text" class="form-control input-sm text-center" ng-model="item" ui-event="{ blur : 'saveChanges($event)' }" >
+<form ng-submit="saveChanges()">
+    <input type="text" class="form-control input-sm text-center"  ng-change="onChange()" ng-model="item" ui-event="{ blur : 'saveChanges($event)' }" >
+</form>

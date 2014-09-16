@@ -1,48 +1,58 @@
-<!-- Column filters -->
-<quiz-filters filters="quizFilterObj"></quiz-filters>
+<div ng-controller="quizController">
 
-<hr/>
+    <!-- Column filters -->
+    <quiz-filters questions="allQuestions" filtered-questions="filteredQuestions" filters="quizFilterObj"></quiz-filters>
 
-<!--div class="container-fluid" msd-wheel="scrollQuestions($event, $delta, $deltaX, $deltaY)" ng-controller="quizController"-->
-<!--div class="row stripes container-fluid"
-     ng-repeat="question in questions | questionFilter:quizFilterObj"
-        -->
-<div ng-controller="quizController" class="container-fluid" >
+    <hr/>
 
-    <div infinite-scroll="moreQuestions()" infinite-scroll-disabled="isLoading" class="container-fluid" style="max-height: 500px; overflow-y: scroll">
+    <!-- Questions main container -->
 
-        <div ng-repeat='question in questions | questionFilter:quizFilterObj' class="container-fluid row">
+    <div class="container-fluid" style="overflow-x: visible">
 
+        <!-- Infinite scroll list of questions -->
+
+        <div infinite-scroll="moreQuestions(filteredQuestions)" infinite-scroll-disabled="isLoading" class="container-fluid infiniteScroll" >
+
+            <div ng-repeat='question in questions' class="container-fluid row" ng-class="question.updated" style="overflow-x: visible">
+
+                <div class="col-xs-3">
+                    <item-input item="question.question" question-Id="{{question._id}}" on-update="updateQuestion(question)"></item-input>
+                </div>
+                <div class="col-xs-4">
+                    <item-list items="question.answer" question-Id="{{question._id}}" on-update="updateQuestion(question)"></item-list>
+                </div>
+                <div class="col-xs-4">
+                    <item-list items="question.categories" question-Id="{{question._id}}" on-update="updateQuestion(question)"></item-list>
+                </div>
+                <div class="col-xs-1">
+                    <button class="btn btn-warning btn-sm pull-right" ng-click="deleteQuestion(question._id)">delete</button>
+                </div>
+            </div>
+
+        </div>
+
+        <hr/>
+
+        <!-- Shows number of un-rendered questions remaining in list -->
+
+        <p class="text-center">Scroll to see {{filteredQuestions.length - questions.length}} more</p>
+        <hr/>
+
+        <!-- Add new question form -->
+
+        <div class="row container-fluid">
             <div class="col-xs-3">
-                <item-input item="question.question" question-Id="{{question._id}}" on-update="updateQuestion(question)"></item-input>
+                <input type="text" placeholder="New Question" class="form-control input-sm text-center" ng-model="formData.question"/>
             </div>
             <div class="col-xs-4">
-                <item-list items="question.answer" question-Id="{{question._id}}" on-update="updateQuestion(question)"></item-list>
+                <input type="text" placeholder="New Answer" class="form-control input-sm text-center" ng-model="formData.answer"/>
             </div>
             <div class="col-xs-4">
-                <item-list items="question.categories" question-Id="{{question._id}}" on-update="updateQuestion(question)"></item-list>
+                <item-list question-Id="question._id" items="formData.categories"></item-list>
             </div>
             <div class="col-xs-1">
-                <button class="btn btn-warning btn-sm pull-right" ng-click="deleteQuestion(question._id)">delete</button>
-                <span class="glyphicon glyphicon-ok form-control-feedback" ng-show="updated"></span>
+                <button class="btn-sm btn-primary pull-right" ng-click="createQuestion()">add</button>
             </div>
-        </div>
-
-        <!--(filteredItems = (questions | filter:{question:quizFilterObj.questionFilter} | filter:{answer:quizFilterObj.answerFilter} | filter:{categories:quizFilterObj.categoryFilter} | limitTo:limitToNum))"-->
-    </div>
-    <hr/>
-    <div class="row container-fluid">
-        <div class="col-xs-3">
-            <input type="text" placeholder="New Question" class="form-control input-sm text-center" ng-model="formData.question"/>
-        </div>
-        <div class="col-xs-4">
-            <input type="text" placeholder="New Answer" class="form-control input-sm text-center" ng-model="formData.answer"/>
-        </div>
-        <div class="col-xs-4">
-            <item-list question-Id="question._id" items="formData.categories"></item-list>
-        </div>
-        <div class="col-xs-1">
-            <button class="btn-sm btn-primary pull-right" ng-click="createQuestion()">add</button>
         </div>
     </div>
 </div>

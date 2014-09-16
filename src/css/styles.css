@@ -1,16 +1,36 @@
-html 					{ overflow-y:scroll; }
-body 					{ padding-top:50px; }
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding-top: 50px;
+}
+
 .stripes:nth-child(2n+1) {
   background: #FAFAFA;
 }
+
 .row {
   padding-bottom: 5px;
   padding-top: 5px;
   overflow-x: visible;
+  margin-left:0;
+  margin-right:0;
 }
 
-.red {
-  color:#FF0000;
+.updated{
+
+  -moz-animation: flash 2s ease-out;
+  -moz-animation-iteration-count: 1;
+
+  -webkit-animation: flash 2s ease-out;
+  -webkit-animation-iteration-count: 1;
+
+}
+
+@-webkit-keyframes flash {
+  0% { background-color:#5cb85c;}
+  100% { background-color:#FFFFFF;}
 }
 
 .pull-right {
@@ -18,6 +38,6 @@ body 					{ padding-top:50px; }
 }
 
 .infiniteScroll {
-  height:200px;
-  max-height: 200px;
+  max-height: 500px;
+  overflow-y: scroll;
 }

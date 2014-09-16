@@ -5,6 +5,7 @@ var quizQuestions = angular.module('quizQuestions', [])
     restrict:'E',
     templateUrl:'./modules/quiz-questions/quiz-questions.html',
     scope: {
+      "numQuestions":'='
     }
   }
 })
@@ -13,10 +14,39 @@ var quizQuestions = angular.module('quizQuestions', [])
     $scope.limitToNum = 11;
     $scope.showFromIndex = 0;
     $scope.formData = {};
+
     $scope.questions = [];
+    $scope.filteredQuestions = [];
     $scope.allQuestions = [];
-    $scope.lastI = 0;
+
+    $scope.numRowsShowing = 0;
     $scope.isLoading = true;
+
+    $scope.$watch('filteredQuestions', function(){
+
+      $scope.numRowsShowing = 10;
+
+      if($scope.filteredQuestions.length > 0){
+        console.log('questions changerddr');
+        $scope.questions = $scope.filteredQuestions.slice(0,$scope.numRowsShowing);
+      }else{
+        $scope.questions = [];
+      }
+    });
+
+
+    $scope.questionDataReturned = function(data){
+
+      $scope.allQuestions = data;
+
+      $scope.isLoading = false;
+
+      $scope.filteredQuestions = $scope.allQuestions;
+      $scope.questions = $scope.filteredQuestions.slice(0,$scope.numRowsShowing);
+
+      $scope.formData = {};
+
+    };
 
 
     // when submitting the add form, send the text to the node API
@@ -29,7 +59,9 @@ var quizQuestions = angular.module('quizQuestions', [])
 
       $http.post('/api/questions', $scope.formData)
         .success(function(data) {
+
           $scope.allQuestions = data;
+          $scope.filteredQuestions = $scope.allQuestions;
 
           $scope.isLoading = false;
 
@@ -58,21 +90,7 @@ var quizQuestions = angular.module('quizQuestions', [])
       }
     };
 
-    // when landing on the page, get all questions and show them
-    $http.get('/api/questions')
 
-      .success(function(data) {
-        $scope.allQuestions = data;
-
-        $scope.isLoading = false;
-
-        $scope.moreQuestions();
-
-        $scope.formData = {};
-      })
-      .error(function(data) {
-        console.log('Error: ' + data);
-      });
 
     $scope.updateQuestion = function(question) {
 
@@ -82,118 +100,73 @@ var quizQuestions = angular.module('quizQuestions', [])
         .success(function(data) {
           $scope.allQuestions = data;
 
+          var updatedQuestion;
+
+          // Find and replace the updated question within the allQuestions array
+          angular.forEach($scope.allQuestions, function(value, key) {
+
+            if(value._id === question._id){
+              value.updated = 'updated';
+              updatedQuestion = value;
+            }
+          });
+
+          // Find and replace the updated question within the filtered questions array
+          angular.forEach($scope.filteredQuestions, function(value, key) {
+
+            if(value._id === question._id){
+              $scope.filteredQuestions[key] = updatedQuestion;
+            }
+          });
+
+          // Find and replace the updated question within the questions array
+          angular.forEach($scope.filteredQuestions, function(value, key) {
+
+            if(value._id === question._id){
+              $scope.questions[key] = updatedQuestion;
+            }
+          });
+
+
+          // Reset the form
           $scope.isLoading = false;
-
-          $scope.moreQuestions();
-
           $scope.formData = {};
 
-          // Feedback to the user that the row has been updated
-          for(var i=0; i<$scope.allQuestions.length; i++) {
-            if(question._id === $scope.allQuestions[i]._id) {
-              console.log($scope.allQuestions[i].question + ' has been updated');
-              $scope.allQuestions[i].updated = true;
-            }
-          }
         })
         .error(function(data) {
           console.log('Error: ' + data);
         });
     };
 
+
+
+
+
+    /* -- Question / Answer / Category filters -- */
     $scope.filterQuestions = function(questions, filterObj) {
 
       var returnArr = quizQuestions.filter(questions,filterObj);
-
       return returnArr;
+    };
 
-    }
 
+
+    /* -- Infinite scroll - load more questions -- */
     $scope.moreQuestions = function() {
 
-      if($scope.lastI >= $scope.allQuestions.length-1){
-        // No more questions
-        console.log('No more questions')
-        $scope.lastI = $scope.allQuestions.length-1;
-        return;
+      $scope.questions = $scope.filteredQuestions.slice(0,$scope.numRowsShowing);
+      if($scope.numRowsShowing <= $scope.filteredQuestions.length){
+
+        $scope.numRowsShowing++;
       }
+    };
 
 
-      var i = $scope.lastI;
-      var j = i+7;
-      while(i < j){
-        if($scope.allQuestions[i]){
-          $scope.questions.push($scope.allQuestions[i]);
-          console.log('adding question ' + i);
-        }else{
-          $scope.isLoading = true;
-          return;
-        }
-        i++;
-      }
-      $scope.lastI = i;
 
-    }
+    /* -- INITIAL LOAD -- */
+    $http.get('/api/questions')
+      .success($scope.questionDataReturned)
+      .error(function(data) {
+        console.log('Error: ' + data);
+      });
 }])
-.filter('questionFilter', function() {
-  return function( rows, filters ) {
-    var filtered = [];
-
-
-    if(filters === undefined){
-      return rows;
-    }
-
-    var questionFilter = filters.questionFilter ? filters.questionFilter.toLowerCase() : '';
-    var answerFilter = filters.answerFilter ? filters.answerFilter.toLowerCase() : '';
-    var categoryFilter = filters.categoryFilter ? filters.categoryFilter.toLowerCase() : '';
-    var done = false;
-
-    angular.forEach(rows, function(row) {
-
-      if(done){
-        return
-      }
-
-      var pass=true;
-      var fail=0;
-      var i=0;
-
-      // Question filter
-      if(row.question.toLowerCase().indexOf(questionFilter) === -1 && questionFilter != ''){
-        pass=false;
-      }
-
-      // Answer filter
-      if(answerFilter !== ''){
-        for(i=0; i<row.answer.length; i++){
-          if(row.answer[i].toLowerCase().indexOf(answerFilter) === -1){
-            fail++;
-          }
-        }
-        if(fail === row.answer.length){
-          pass=false;
-        }
-      }
-
-      // Category filter
-      if(categoryFilter !== ''){
-        for(i=0; i<row.categories.length; i++){
-          if(row.categories[i].toLowerCase().indexOf(categoryFilter) === -1){
-            fail++;
-          }
-        }
-        if(fail === row.categories.length){
-          pass=false;
-        }
-      }
-
-      if(pass===true){
-        // Item matches filters, or none are applied
-        filtered.push(row);
-      }
-
-    });
-    return filtered;
-  };
-})
