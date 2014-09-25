@@ -157,7 +157,7 @@ var quizQuestions = angular.module('quizQuestions', [])
       $scope.questions = $scope.filteredQuestions.slice(0,$scope.numRowsShowing);
       if($scope.numRowsShowing <= $scope.filteredQuestions.length){
 
-        $scope.numRowsShowing++;
+        $scope.numRowsShowing+=50;
       }
     };
 
